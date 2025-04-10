@@ -1,6 +1,6 @@
 import sounddevice as sd
 import numpy as np
-
+import sys
 # Settings
 samplerate = 44100  # Hz
 blocksize = 1024    # Samples per block
@@ -17,6 +17,8 @@ def audio_callback(indata, frames, time, status):
     # Check threshold
     if db > threshold_db:
         print("🔊 Loud sound detected!")
+    print(indata)
+    sys.exit(0)
 
 # Start stream
 with sd.InputStream(callback=audio_callback,
