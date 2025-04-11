@@ -7,6 +7,7 @@ import pvcobra
 import time
 from openai import OpenAI
 import asyncio
+import sys
 
 def main():
     access_key = "2IFCp+OEFXqR1szDdpuulNFo77/2uff9cxersApQ9Bdd6uHy8E3QhQ=="  # From Picovoice Console
@@ -80,6 +81,7 @@ def main():
 
         except KeyboardInterrupt:
             print("Stopping...")
+            sys.exit(0)
 
 
 if __name__ == "__main__":
