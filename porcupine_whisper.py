@@ -8,14 +8,16 @@ import time
 from openai import OpenAI
 import asyncio
 import sys
+from dotenv import dotenv_values
 
 def main():
-    access_key = "2IFCp+OEFXqR1szDdpuulNFo77/2uff9cxersApQ9Bdd6uHy8E3QhQ=="  # From Picovoice Console
+    config = dotenv_values(".env")
+    access_key = config["PICO-API"]  # From Picovoice Console
     keyword_path = "hey_grab_ppn.ppn"
     filename = "porcupine_testing.wav"
     
     # Set your API key here
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key=config["OPEN-API"])
 
     # Async function to handle transcription
     def transcribe():
