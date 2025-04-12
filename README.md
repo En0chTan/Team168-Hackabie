@@ -3,6 +3,7 @@ Domain 3 (Task 1)
 © Team Hackabie
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Team Members
 <ul>
   <li>Enoch Tan Jeng Sen</li>
@@ -19,6 +20,8 @@ Domain 3 (Task 1)
   <li><a href="https://www.canva.com/design/DAGkG5SLV8Q/tyQPBf4vpVJaaoKeYXwIUg/edit?utm_content=DAGkG5SLV8Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Presentation Slides</a></li>
 </ul>
 
+=======
+>>>>>>> Stashed changes
 Folders
 - Main_UI
 Contains the AI implemention using Python Flask and Tkinter, In the final product, Python Flask would be probably used/C++ for better performance
@@ -41,6 +44,7 @@ If we are available to go into the finals, this will be our final implementation
 (5) The text processed will now be compared with available commands (or translated as needed) and matched with the correct intents.
 (6) Now the server can process the correct commands and go to Task 2! 
 
+<<<<<<< Updated upstream
 Thank you, if you're interested in how we'll do this, do consider letting us into finals and (maybe give us some datasets/credits for model training purposes (or not!))
 
 <br></br>
@@ -90,3 +94,6 @@ Thank you, if you're interested in how we'll do this, do consider letting us int
 
 - The system stores the driver’s accent in a database to enhance recognition accuracy.
 
+=======
+Thank you, if you're interested in how we'll do this, do consider letting us into finals and (maybe give us some datasets/credits for model training purposes (or not!))
+>>>>>>> Stashed changes
