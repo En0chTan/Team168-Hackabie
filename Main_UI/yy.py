@@ -15,6 +15,7 @@ from PyQt5.QtCore import (
     QThread, pyqtSignal, Qt, QRectF, QPropertyAnimation, pyqtProperty, QEasingCurve
 )
 from PyQt5.QtGui import QPainter, QBrush, QColor, QFont
+from dotenv import dotenv_values
 
 
 class AnimatedEllipse(QGraphicsObject):
@@ -179,7 +180,7 @@ class VoiceAssistantWorker(QThread):
         self.access_key = access_key
         self.keyword_path = keyword_path
         self.filename = filename
-        self.client = OpenAI(api_key="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")
+        self.client = OpenAI(api_key=config["OPEN-API"])
         self.tts = pyttsx3.init()
 
     def run(self):
@@ -371,7 +372,7 @@ class AssistantUI(QWidget):
         self.chat_page.set_main_ui(self.main_widget, self.stack)
 
         self.worker = VoiceAssistantWorker(
-            access_key="qX3DhITQvxftyPTIxLxpiTXFD9yRzJ64d0bAJsTUlUxxeMWV8mnrFg==",
+            access_key=config["PICO-API"]",
             keyword_path="hey_grab_ppn.ppn",
             filename="recording.wav"
         )
