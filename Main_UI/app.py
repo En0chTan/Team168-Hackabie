@@ -9,15 +9,13 @@ import threading
 from collections import deque
 import time
 import pyttsx3
-
-
-app = Flask(__name__)
+from dotenv import dotenv_values
 
 # Configuration
-ACCESS_KEY = "qX3DhITQvxftyPTIxLxpiTXFD9yRzJ64d0bAJsTUlUxxeMWV8mnrFg=="
+ACCESS_KEY = config["PICO-API"]
 KEYWORD_PATH = "hey_grab_ppn.ppn"
 AUDIO_FILENAME = "porcupine_testing.wav"
-OPENAI_KEY = "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"
+OPENAI_KEY = config["OPEN-API"]
 
 # Global variables
 is_listening = True
