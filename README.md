@@ -12,7 +12,7 @@ Domain 3 (Task 1)
 
 ## Presentation Video and Slides Folder Link
 <ul>
-  <li><a href="https://drive.google.com/drive/folders/1asf8TMqH0-Yp1hoHfX3s3Rsqk1Edyry3?usp=drive_link">Presentation Slides</a></li>
+  <li><a href="https://drive.google.com/drive/folders/1asf8TMqH0-Yp1hoHfX3s3Rsqk1Edyry3?usp=drive_link">Drive Folder</a></li>
 </ul>
 
 ## Folders
