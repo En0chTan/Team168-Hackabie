@@ -30,15 +30,15 @@ Basically this just captures specific amplitudes/shapes and determine whether if
 Here, you can see the early implementations and breakdown of our program.
 
 ## If we are available to go into the finals, this will be our final implementation.
-(1) Real time audio will be captured and processed into segments.
-(2A) The segments starting with "Hey Grab" will trigger recording mode. 
-(2B) If 3 or a custom instances of "gestures" is captured, emergency mode will be triggered.
-(3) The program will capture the ending of a sentence either through VAD or User Voice Recognition Models.
-(4) The complete audio of the sentence will be sent into a server and processed by a Speech-To-Text Model.
-(5) The text processed will now be compared with available commands (or translated as needed) and matched with the correct intents.
-(6) Now the server can process the correct commands and go to Task 2! 
+- (1) Real time audio will be captured and processed into segments.
+- (2A) The segments starting with "Hey Grab" will trigger recording mode. 
+- (2B) If 3 or a custom instances of "gestures" is captured, emergency mode will be triggered.
+- (3) The program will capture the ending of a sentence either through VAD or User Voice Recognition Models.
+- (4) The complete audio of the sentence will be sent into a server and processed by a Speech-To-Text Model.
+- (5) The text processed will now be compared with available commands (or translated as needed) and matched with the correct intents.
+- (6) Now the server can process the correct commands and go to Task 2! 
 
-## Thank you, if you're interested in how we'll do this, do consider letting us into finals and (maybe give us some datasets/credits for model training purposes (or not!))
+Thank you, if you're interested in how we'll do this, do consider letting us into finals and (maybe give us some datasets/credits for model training purposes (or not!))
 
 <br></br>
 
