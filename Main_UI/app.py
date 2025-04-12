@@ -11,6 +11,7 @@ import time
 import pyttsx3
 from dotenv import dotenv_values
 
+app = Flask(__name__)
 # Configuration
 ACCESS_KEY = config["PICO-API"]
 KEYWORD_PATH = "hey_grab_ppn.ppn"
