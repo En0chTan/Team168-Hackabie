@@ -19,6 +19,7 @@ def phonetic_match(word):
                 for y in known_phonetics[x]: #values
                     if each == y[0] or each == y[1]:
                         print(f"Matched phonetic, likely Intent = {x}")
+                        return 0
 
 
 def schematics_match(input_phrase):
@@ -29,6 +30,7 @@ def schematics_match(input_phrase):
             score = util.cos_sim(input_vec, model.encode(phrase))
             if score > 0.7:
                 print(f"Matched intent: {intent} (score: {score.item():.2f})")
+                return 0
             else:
                 print(f"UnMatched intent: {intent} (score: {score.item():.2f})")
                 
