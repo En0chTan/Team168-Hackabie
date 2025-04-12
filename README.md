@@ -15,7 +15,7 @@ Domain 3 (Task 1)
 ## Links
 <ul>
   <li><a href="">Presentation Video</a></li>
-  <li><a href="">Presentation Slides</a></li>
+  <li><a href="https://www.canva.com/design/DAGkG5SLV8Q/tyQPBf4vpVJaaoKeYXwIUg/edit utm_content=DAGkG5SLV8Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Presentation Slides</a></li>
 </ul>
 
 <br></br>
