@@ -14,7 +14,7 @@ def main():
     config = dotenv_values(".env")
     access_key = config["PICO-API"]  # From Picovoice Console
     keyword_path = "hey_grab_ppn.ppn"
-    filename = "porcupine_testing.wav"
+    filename = "audio/porcupine_whisper.wav"
     
     # Set your API key here
     client = OpenAI(api_key=config["OPEN-API"])
@@ -23,7 +23,7 @@ def main():
     def transcribe():
         transcript = client.audio.translations.create(
             model="whisper-1",
-            file=open("porcupine_testing.wav", "rb"),
+            file=open(filename, "rb"),
             prompt="Transcribe without translation."
         )
         print(transcript)

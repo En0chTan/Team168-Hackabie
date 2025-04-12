@@ -2,9 +2,11 @@ import pvcobra
 import pyaudio
 import struct
 import sys
+from dotenv import dotenv_values
 
 def main():
-    cobra = pvcobra.create(access_key="2IFCp+OEFXqR1szDdpuulNFo77/2uff9cxersApQ9Bdd6uHy8E3QhQ==")
+    config = dotenv_values(".env")
+    cobra = pvcobra.create(access_key=config["PICO-API"])
 
     pa = pyaudio.PyAudio()
     stream = pa.open(

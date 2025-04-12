@@ -20,8 +20,8 @@ my_recording = sd.rec(int(duration * samplerate), samplerate=samplerate, channel
 sd.wait()
 print("🔇 Shut up nowww!!!!")
 
-sf.write("1.wav", my_recording, samplerate)
-fpath = Path("1.wav")
+sf.write("audio/is_voice_similar_1.wav", my_recording, samplerate)
+fpath = Path("audio/is_voice_similar_1.wav")
 wav = preprocess_wav(fpath)
 
 reference_embedding = encoder.embed_utterance(wav)
@@ -37,8 +37,8 @@ my_recording = sd.rec(int(duration * samplerate), samplerate=samplerate, channel
 sd.wait()
 print("🔇 Shut up nowww!!!!")
 
-sf.write("2.wav", my_recording, samplerate)
-fpath = Path("2.wav")
+sf.write("audio/is_voice_similar_2.wav", my_recording, samplerate)
+fpath = Path("audio/is_voice_similar_2.wav")
 wav = preprocess_wav(fpath)
 
 test_embedding = encoder.embed_utterance(wav)

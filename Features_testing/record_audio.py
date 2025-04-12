@@ -16,4 +16,4 @@ my_recording = sd.rec(int(duration * samplerate), samplerate=samplerate, channel
 sd.wait()
 print("🔇 Shut up nowww!!!!")
 
-sf.write("1.wav", my_recording, samplerate)
+sf.write("audio/record_audio.wav", my_recording, samplerate)

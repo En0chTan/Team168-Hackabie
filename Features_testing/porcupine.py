@@ -5,23 +5,25 @@ import os
 import wave
 import pvcobra
 import time
-import openai
+from openai import OpenAI
 from deepgram import Deepgram
 import asyncio
+from dotenv import dotenv_values
 
 def main():
-    access_key = "2IFCp+OEFXqR1szDdpuulNFo77/2uff9cxersApQ9Bdd6uHy8E3QhQ=="  # From Picovoice Console
+    config = dotenv_values(".env")
+    access_key = config["PICO-API"]  # From Picovoice Console
     keyword_path = "hey_grab_ppn.ppn"
-    filename = "porcupine_testing.wav"
+    filename = "audio/porcupine.wav"
     
     # Set your API key here
-    DEEPGRAM_API_KEY = "9f32058791d9c4f2456893d7c612ddabffad8dea"
+    DEEPGRAM_API_KEY = OpenAI(api_key=config["OPEN-API"])
 
     # Async function to handle transcription
     async def transcribe():
         dg_client = Deepgram(DEEPGRAM_API_KEY)
 
-        with open("porcupine_testing.wav", "rb") as audio:
+        with open(filename, "rb") as audio:
             source = {
                 "buffer": audio,
                 "mimetype": "audio/wav"
