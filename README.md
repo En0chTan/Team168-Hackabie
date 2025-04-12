@@ -10,9 +10,8 @@ Domain 3 (Task 1)
   <li>Foo Yau Yun</li>
 </ul>
 
-## Links
+## Presentation Video and Slides Folder Link
 <ul>
-  <li><a href="">Presentation Video and Slides Folder</a></li>
   <li><a href="https://drive.google.com/drive/folders/1asf8TMqH0-Yp1hoHfX3s3Rsqk1Edyry3?usp=drive_link">Presentation Slides</a></li>
 </ul>
 
