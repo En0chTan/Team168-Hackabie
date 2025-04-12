@@ -12,8 +12,8 @@ Domain 3 (Task 1)
 
 ## Links
 <ul>
-  <li><a href="">Presentation Video</a></li>
-  <li><a href="https://www.canva.com/design/DAGkG5SLV8Q/tyQPBf4vpVJaaoKeYXwIUg/edit?utm_content=DAGkG5SLV8Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Presentation Slides</a></li>
+  <li><a href="">Presentation Video and Slides Folder</a></li>
+  <li><a href="https://drive.google.com/drive/folders/1asf8TMqH0-Yp1hoHfX3s3Rsqk1Edyry3?usp=drive_link">Presentation Slides</a></li>
 </ul>
 
 ## Folders
