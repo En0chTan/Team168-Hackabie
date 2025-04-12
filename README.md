@@ -10,8 +10,6 @@ Domain 3 (Task 1)
   <li>Foo Yau Yun</li>
 </ul>
 
-<br></br>
-
 ## Links
 <ul>
   <li><a href="">Presentation Video</a></li>
