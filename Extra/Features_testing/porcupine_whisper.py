@@ -54,6 +54,7 @@ def main():
         frames = [] #To put chunks of audio
         count = 30
         result = -1
+        flag_1 = 0
         try:
             while True:
                 pcm_b = audio_stream.read(porcupine.frame_length, exception_on_overflow=False)
@@ -61,6 +62,9 @@ def main():
                 if result < 0:
                     result = porcupine.process(pcm)
                 if result >= 0:
+                    if flag_1 == 0:
+                        print("Triggered!")
+                        flag_1 = 1
                     record = True  #Start recording
                     # You can now trigger your recording logic here
                     if record:
