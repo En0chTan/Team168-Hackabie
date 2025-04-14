@@ -84,5 +84,5 @@ Thank you, if you're interested in how we'll do this, do consider letting us int
 
 - During account setup, the driver is required to speak specific sentences to create a voice profile. This ensures that only the registered driver can interact with the AI.
 
-- The system stores the driver’s accent in a database to enhance recognition accuracy.
+- The system stores the driver’s accent in a database to enhance recognition accuracy
 
